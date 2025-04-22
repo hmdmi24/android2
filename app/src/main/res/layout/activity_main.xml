@@ -7,72 +7,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#145"
-    >
+    android:background="#236">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hmdmi24"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_launcher_foreground"
+        >
+
+
+    </ImageView>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
         <EditText
-            android:id="@+id/editTextNumber1"
-            android:layout_width="150dp"
+            android:id="@+id/Nuser"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Number1"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:inputType="text"
+            android:background="#f559"
+            android:minHeight="48dp"
+            android:textColorHint="#fff"
             android:textColor="#fff"
-            android:textColorHint="@color/white"
-            android:layout_gravity="left"
-            android:layout_marginTop="150dp"
-            android:inputType="numberDecimal"/>
+            android:hint="Username" />
+
         <EditText
-            android:id="@+id/editTextNumber2"
-            android:layout_width="150dp"
+            android:id="@+id/Npass"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Number2"
+            android:background="#f559"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:textColorHint="#fff"
+            android:inputType="text"
             android:textColor="#fff"
-            android:textColorHint="@color/white"
-            android:layout_gravity="left"
-            android:inputType="numberDecimal"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:minHeight="48dp"
+            android:hint="Password"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginStart="14dp"
-            android:layout_marginTop="32dp">
-            <Button
-                android:id="@+id/buttonAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"/>
-            <Button
-                android:id="@+id/buttonSubtract"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-"/>
-            <Button
-                android:id="@+id/buttonMultiply"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="×"/>
-            <Button
-                android:id="@+id/buttonDivide"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="÷"/>
-        </LinearLayout>
-        <EditText
-            android:id="@+id/editTextResult"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:hint="Result"
-            android:textColor="#fff"
-            android:textColorHint="@color/white"
-            android:layout_gravity="left"
-            android:inputType="none"
-            android:focusable="false"
-            android:clickable="false"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Button" />
     </LinearLayout>
 </LinearLayout>
